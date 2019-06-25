@@ -1,9 +1,15 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/desafio', {
+
+require('dotenv').config({
+    path: __dirname+'/../.env'
+})
+ 
+mongoose.connect(process.env.MONGO_DEV, {
     useNewUrlParser: true
 })
 .then(() => console.log('Conectado'))
 .catch(e => console.log(e))
+
 
 
 const PostSchema = new mongoose.Schema({
