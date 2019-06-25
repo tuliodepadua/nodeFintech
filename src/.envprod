@@ -1,1 +1,2 @@
 MONGO_PROD="mongodb+srv://teste01:teste01@portfolio-0tjge.mongodb.net/test?retryWrites=true&w=majority"
+PORT=5000
