@@ -10,8 +10,6 @@ mongoose.connect(process.env.MONGO_PROD, {
 .then(() => console.log('Conectado'))
 .catch(e => console.log(e))
 
-
-
 const PostSchema = new mongoose.Schema({
         nome: String,
         idade: Number,
