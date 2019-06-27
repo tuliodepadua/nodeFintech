@@ -28,5 +28,5 @@ app.use(require('./routes'))
 app.use(function(req, res){
     res.sendFile(path.join(__dirname, '../src/build', 'index.html'))
 });
-// server.listen(process.env.PORT || '5000')
-server.listen(3333)
+server.listen(process.env.PORT || '5000')
+// server.listen(3333)
