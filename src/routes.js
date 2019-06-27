@@ -11,14 +11,12 @@ routes.get('/', function(req, res){
 	res.sendFile(path.join(__dirname, '../src/build', 'index.html'))
 })
 
-
 routes.post('/buscar',  PostController.buscar)
 routes.get('/usuarios/:pg', PostController.index)
 routes.delete('/registro/:id/delete', PostController.deletar)
 routes.get('/busca/:id/', PostController.buscarId)
 routes.put('/registro/:id/atualizar', PostController.atualizar)
 routes.post('/registro',  PostController.store)
-
 
 // routes.post('/posts/:id/like', LikeController.store)
 

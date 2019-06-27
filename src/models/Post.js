@@ -1,10 +1,13 @@
 const mongoose = require('mongoose')
 
 require('dotenv').config({
-    path: __dirname+'/../.envprod'
+    path: __dirname+'/../.env'
+   
 })
- 
-mongoose.connect(process.env.MONGO_PROD, {
+ // path: __dirname+'/../.env'
+ // mongoose.connect(process.env.MONGO_PROD, {
+mongoose.connect(process.env.MONGO_DEV, {
+
     useNewUrlParser: true
 })
 .then(() => console.log('Conectado'))
