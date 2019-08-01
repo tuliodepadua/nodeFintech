@@ -2,7 +2,6 @@ const mongoose = require('mongoose')
 
 require('dotenv').config({
     path: __dirname+'/../.envprod'
-   
 })
  // path: __dirname+'/../.env'
  mongoose.connect(process.env.MONGO_PROD, {

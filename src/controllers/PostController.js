@@ -1,7 +1,7 @@
 
 const Post = require('../models/Post')
 const Valid = require('../utils/Validadores')
- 
+// 
 module.exports = {
     async buscar(req, res){
         let { busca } = req.body; 
@@ -29,7 +29,6 @@ module.exports = {
                 adventure 
             )
         });
-            
     },
     async index(req, res){
         let init = req.params.pg * 4;
